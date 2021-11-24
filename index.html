@@ -9,15 +9,17 @@
     <div class="container">
       <div class="info">
         <img src="AVA.jpg" alt="PHOTO" class="avatar" />
-        <h3>GO LEWNAS</h3>
-        <p>Я изучаю JS</p>
-        <p>Люблю играть в Игры, кататься на сноуборде и на <strong>BMW</strong></p>
+        <div class="info-text">
+          <h3>GO LEWNAS</h3>
+          <p>Я изучаю JS</p>
+          <p>Люблю играть в Игры, кататься на сноуборде и на <strong>BMW</strong></p>
 
-        <h4>Мои соц сети</h4>
+          <h4>Мои соц сети</h4>
 
-        <a href="https://ua.linkedin.com/in/maksym-ganas-76881019b" target="_blank">Linked</a>
-        |
-        <a href="https://www.instagram.com/ganasmaksym/" target="_blank">Inst</a>
+          <a href="https://ua.linkedin.com/in/maksym-ganas-76881019b" target="_blank">Linked</a>
+          |
+          <a href="https://www.instagram.com/ganasmaksym/" target="_blank">Inst</a>
+        </div>
       </div>
 
       <div class="card bg-1">
@@ -28,18 +30,18 @@
           <li>Сноуборд</li>
         </ol>
       </div>
-
-      <div class="card bg-2">
-        <h3>Youtube Music Playlist</h3>
-        <a href="YuoMusic.html">List</a>
-      </div>
       <div class="card bg-3">
         <h3>Опыт Работы</h3>
-        <table>
+        <table class="table">
           <tr>
             <th>Компания</th>
             <th>Должность</th>
             <th>Года</th>
+          </tr>
+          <tr>
+            <td>VITA Maritime</td>
+            <td>3rd Eng</td>
+            <td>2010-2015</td>
           </tr>
           <tr>
             <td>BSM</td>
@@ -53,25 +55,62 @@
           </tr>
         </table>
       </div>
+      <div class="card bg-2">
+        <h3>Youtube Music Playlist</h3>
+        <!-- <a href="YuoMusic.html">List</a> -->
+        <ul class="playlist">
+          <li>
+            <a href="https://music.youtube.com/playlist?list=PLQZMjQpR6Xd0VW7-SC39wQyfATVaGy-Dp" target="_blank"
+              >Rock</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://music.youtube.com/playlist?list=PLQZMjQpR6Xd0blCYIHhsiSqzvLqKom6f1&feature=share"
+              target="_blank"
+              >Drive</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://music.youtube.com/playlist?list=PLQZMjQpR6Xd3_IhTPL2kPy2wPV5A33xlE&feature=share"
+              target="_blank"
+              >Tapok</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/AVA.jpg">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" placeholder="Введите имя" />
+            </div>
+            <div class="form-group">
+              <label for="mail">Email</label>
+              <input type="text" id="mail" placeholder="Email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Phone">Phone</label>
+            <input type="text" id="Phone" placeholder="номер Тел" />
+          </div>
+          <div class="form-group">
+            <label for="text">Сообшение</label>
+            <textarea name="123" id="text" cols="15" rows="2"></textarea>
+          </div>
 
-      <h2>Связаться со мной</h2>
-      <form action="/AVA.jpg">
-        <label for="name">Имя</label>
-        <input type="text" id="name" placeholder="Введите имя" />
-        <br />
-        <label for="mail">Email</label>
-        <input type="text" id="mail" placeholder="Email" />
-        <br />
-        <label for="Phone">Phone</label>
-        <input type="text" id="Phone" placeholder="номер Тел" />
-        <br />
-        <input type="submit" value="Send" />
-        <br />
+          <input class="btn" type="submit" value="Отправить" />
 
-        <label for="text">Сообшение</label>
-        <textarea name="123" id="text" cols="5" rows="2"></textarea>
-        <br />
-      </form>
+          <br />
+        </form>
+      </div>
+      <div class="position">
+        <div class="box"></div>
+      </div>
     </div>
+    <div style="margin-bottom: 500px"></div>
   </body>
 </html>
